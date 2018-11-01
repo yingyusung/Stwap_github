@@ -1,0 +1,41 @@
+#box1{
+  border: 1px solid white;
+  padding: 1px;
+}
+
+h1 {
+color: white;
+text-align: center;
+font-size: 36px;
+font-style: oblique;
+font-family: sans-serif;
+background-color: pink;
+}
+
+img {
+  text-align: center;
+}
+
+h2#text1{
+  text-align: center;
+  color: blue;
+}
+
+h2#text2{
+  text-align: center;
+  color: pink;
+}
+
+h3 {
+  text-align: center;
+  font-size: 50px;
+}
+
+p {
+color: white;
+text-align: center;
+font-size: 22px;
+font-family: monospace;
+}
+body {background-color: pink;
+}
