@@ -1,42 +1,152 @@
 <!DOCTYPE html>
-<title>WEEK 1 HMTL</title>
-<html>
+<title> STWAP </title>
+<html lang="en">
 <head>
-  <style>
-  ,second{
-    color: green;
-  }
-
-h1 {
-  color: white;
-  text-align: center;
-  font-size: 36px;
-  font-style: oblique;
-  background-color: grey
-}
-img {text-align: center;
-}
-p {
-  color: grey;
-  text-align: center;
-  font-size: 22px;
-  font: ariel;
-}
-body {background-color: pink;
-  }
-</style>
-
-<div>
-  <h1>Welcome to our website</h1>
-  <img src="http://i65.tinypic.com/10rvguo.jpg" alt="A Cute Cat">
-  <p> hello this is the website, click <a href="http://google.com">here</a> for the link</p>
-  <p class="second"> hello this is my website</p> 
-</div>
-
+  <link rel="stylesheet" href="css/styles.css">
+  <meta name="viewpoint" content="width = device-width, initial-scale = 1">
+  <link rel="javascript" href="my_script.js">
 </head>
 
+<body>
+  <div id="header">
+    <a href="http://tinypic.com?ref=i5yahl" target="_blank"><img src="http://i64.tinypic.com/i5yahl.png" border="0" alt="Image and video hosting by TinyPic"></a>
+  </div>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <div class="navbar">
+    <div class="subnav">
+      <button class="subnavbtn">BUY <i class="fa fa-caret-down"></i></button>
+      <div class="subnav-content">
+        <a href="#MENSWEAR">MENSWEAR</a>
+        <a href="#WOMENSWEAR">WOMENSWEAR</a>
+        <a href="#TECH">TECH</a>
+        <a href="#HOME">HOME</a>
+        <a href="#BOOKS">BOOKS</a>
+        <a href="#FREE STUFF">FREE STUFF</a>
+      </div>
+    </div>
+
+    <div class="subnav">
+      <button class="subnavbtn">SELL <i class="fa fa-caret-down"></i></button>
+      <div class="subnav-content">
+        <a href="#MENSWEAR">MENSWEAR</a>
+        <a href="#WOMENSWEAR">WOMENSWEAR</a>
+        <a href="#TECH">TECH</a>
+        <a href="#HOME">HOME</a>
+        <a href="#BOOKS">BOOKS</a>
+        <a href="#FREE STUFF">FREE STUFF</a>
+      </div>
+    </div>
+
+    <a href="#SWAP">SWAP</a>
+    <a href="#NEWS">NEWS</a>
+    <a href="#ABOUT US">ABOUT US</a>
+    <a href="#WORK FOR US">WORK FOR US</a>
+    <a href="#CONTACT">CONTACT</a>
+
+    <div class="subnav">
+      <button class="subnavbtn">SOCIAL <i class="fa fa-caret-down"></i></button>
+      <div class="subnav-content">
+        <a href="#INSTAGRAM">INSTAGRAM</a>
+        <a href="FACEBOOK">FACEBOOK</a>
+        <a href="TWITTER">TWITTER</a>
+      </div>
+    </div>
+  </div>
+
+
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 4</div>
+    <img src="img1.jpg" style="width:100%; height:559px">
+    <div class="text">10 ways to be sustainably fashionable this winter</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 4</div>
+    <img src="img3.jpg" style="width:100%; height:559px">
+    <div class="text">Looking after your mental health at univeristy</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 4</div>
+    <img src="img4.jpg" style="width:100%; height:559px">
+    <div class="text">Ru-Paul's drag race stars set to perform in Brighton</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 4</div>
+    <img src="img2.jpg" style="width:100%; height:559px">
+    <div class="text">How to cut down on plastic waste and save money</div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+ <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+ <span class="dot" onclick="currentSlide(1)"></span>
+ <span class="dot" onclick="currentSlide(2)"></span>
+ <span class="dot" onclick="currentSlide(3)"></span>
+ <span class="dot" onclick="currentSlide(4)"></span>
+</div>
+
+ <script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 3000);
+}
+</script>
+
+<h2><a href="http://tinypic.com?ref=vymsdh" target="_blank"><img src="http://i66.tinypic.com/vymsdh.jpg" border="0" alt="Image and video hosting by TinyPic"></a></h2>
+
+<div class="row" >
+  <div class="firstcolumn" style = "width: 25%">
+    <img src="airforce.jpg" style="width:100%">
+    <img src="bike.jpg" style="width:100%">
+    <img src="iPhone.jpg" style="width:100%">
+    <img src="lamp.jpg" style="width:100%">
+    <img src="books.jpg" style="width:100%">
+  </div>
+  <div class="column" style = "width: 25%">
+    <img src="ps4.jpg" style="width:100%">
+    <img src="kitchen.jpg" style="width:100%">
+    <img src="blender.jpg" style="width:100%">
+    <img src="suitcase.jpg" style="width:100%">
+  </div>
+  <div class="column" style="width: 25%">
+    <img src="bottle.jpg" style="width:100%">
+    <img src="psychology.jpg" style="width:100%">
+    <img src="cacti.jpg" style="width:100%">
+    <img src="tv.jpg" style="width:100%">
+  </div>
+
+</div>
+
+<footer>
+  <small>&copy; Contact <a href="stwap.co.uk"> stwap@stwap.co.uk </a></small>
+</footer>
+<script src="js/myscript.js">
+
+</script>
 
 </body>
-
-
 </html>
