@@ -1,0 +1,240 @@
+body{
+  margin:0px;
+  background-color: #5D5B5B;
+}
+
+#header {
+  padding-top: 20px;
+  padding-bottom: 100px;
+  margin: auto;
+  text-align: center;
+  width: 600px;
+  height: 190px;
+
+}
+
+footer {
+  font-family: monospace;
+  font-size: 15px;
+}
+
+/* NAVBAR */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: monospace;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: monospace;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: #484747;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: #484747;
+  width: 100%;
+  z-index: 1;
+  font-family: monospace;
+}
+
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+
+/*Slideshow*/
+* {box-sizing:border-box}
+
+.slideshow-container {
+  max-width: 70%;
+  max-height: 600px;
+  position: center;
+  margin: auto;
+  padding-top: 10px;
+  position: relative;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: white;
+  font-size: 22px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 15px;
+  left:
+  width: 100%;
+  text-align: center;
+  font-family: monospace;
+  font-weight: bold;
+}
+
+.mySlides fade {
+  height: 200px;
+  width: 50%;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 15px;
+  margin-top: 18px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  font-weight: bold;
+  font-family: monospace;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+h2 {
+  padding: 20px;
+  text-align: center;
+}
+
+/*Image collage*/
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 5px;
+    margin-left: 0px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    float: right;
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    width: 25%;
+    padding: 0 20px;
+    /*margin-left: 100px; */
+
+  }
+
+  .firstcolumn {
+    float: left;
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    width: 25%;
+    padding: 0 20px;
+    margin-left: 170px;
+  }
+
+.column img {
+  margin-top: 15px;
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
